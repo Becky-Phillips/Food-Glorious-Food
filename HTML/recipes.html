@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipes</title>
+	<h1>Recipes</h1>
+</head>
+<body>
+	<div id="selector">
+		<a href="#" id="menu-item-spagbol">Spag bol</a>
+	</div>
+	<div id="item-spagbol" style="display: none;">
+	<h2> Spaghetti Bolognese</h1>
+	<img src="../Images/spagbol.jpg" />
+	<h4>Ingredients</h4>
+<ul>
+	<li>spaghetti</li>
+	<li>something else</li>
+</ul>
+<h3>Method</h3>
+	<p>Cook it</p>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+var array = ["spagbol"];
+for(i=0;i<array.length;i++){
+	var element = array[i];
+	 $( "#menu-item-"+element ).click(function() {
+  $("#selector").hide();
+  $("#item-"+element).show();
+  // $(selector).toggle();
+});
+}
+/* or
+for(var x in array){
+	
+} */
+
+
+</script>
+
+</body>
+</html>
