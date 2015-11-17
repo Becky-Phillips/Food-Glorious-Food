@@ -55,9 +55,27 @@
   </div>
   </div>
 
+  <style>
+  #selector {
+  font-family: "Source Sans Pro",sans-serif;
+	 font-size: 20px;
+	 font-weight: 400;
+	 color: green;
+	 text-align: center;
+}	
+.picturesize {
+	max-width: 100% ;
+	height:100px;
+}
+
+  </style>
+
 	<div class="container">
 	<div id="selector">
-		<a href="#" id="menu-item-spagbol">Spag bol</a>
+		<a href="#" id="menu-item-spagbol" class="thumbnail">Spag bol<img src="../Images/spagbol.jpg"  class="picturesize" /></a> </br>
+		<a href="#" id="menu-item-chilli" class="thumbnail">Chilli<img src="../Images/chilli.jpg" class="picturesize" /></a> </br>
+		<a href="#" id="menu-item-pastabake" class="thumbnail">Pastabake<img src="../Images/pastabake.jpg" class="picturesize" /></a> </br>
+		<a href="#" id="menu-item-chickenburger" class="thumbnail">Chicken Burger<img src="../Images/chickenburger.jpg" class="picturesize"/></a>
 	</div>
 	<div id="item-spagbol" style="display: none;">
 		<span id="back-spagbol" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -71,9 +89,49 @@
 <h3>Method</h3>
 	<p>Cook it</p>
 </div>
+<div id="item-chilli" style="display: none;">
+		<span id="back-chilli" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<h2> Chilli</h1>
+	<img src="../Images/chilli.jpg" />
+	<h4>Ingredients</h4>
+<ul>
+	<li>Stuff</li>
+	<li>something else</li>
+</ul>
+<h3>Method</h3>
+	<p>Cook it</p>
 </div>
+</div>
+<div id="item-pastabake" style="display: none;">
+		<span id="back-pastabake" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<h2> Pasta Bake</h1>
+	<img src="../Images/pastabake.jpg" />
+	<h4>Ingredients</h4>
+<ul>
+	<li>Stuff</li>
+	<li>something else</li>
+</ul>
+<h3>Method</h3>
+	<p>Cook it</p>
+</div>
+</div>
+<div id="item-chickenburger" style="display: none;">
+		<span id="back-chickenburger" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<h2> Chicken Burger</h1>
+	<img src="../Images/chickenburger.jpg" />
+	<h4>Ingredients</h4>
+<ul>
+	<li>Stuff</li>
+	<li>something else</li>
+</ul>
+<h3>Method</h3>
+	<p>Cook it</p>
+</div>
+</div>
+
+
 <script type="text/javascript">
-var array = ["spagbol"];
+var array = ["spagbol","chilli","pastabake","chickenburger"];
 for(i=0;i<array.length;i++){
 	var element = array[i];
 	 $( "#menu-item-"+element ).click(function() {
