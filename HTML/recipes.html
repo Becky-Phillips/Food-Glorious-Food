@@ -1,162 +1,161 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Glorious Food</title>
-  <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
-  <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="../CSS/font-awesome.min.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,200,100,300,500,600,800,900' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,700italic,900,400italic,300italic' rel='stylesheet' type='text/css'>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/jquery.sticky.js"></script>
-  <script>
-    $(window).load(function(){
-      $("#menu").sticky({ topSpacing: 0 });
-    });
-  </script>
-	<title>Recipes</title>
-	<h1>Recipes</h1>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Food Glorious Food</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../CSS/font-awesome.min.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,200,100,300,500,600,800,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,700italic,900,400italic,300italic' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!--script type="text/javascript" src="../js/jquery.sticky.js"></script-->
+		<script>
+		$(window).load(function(){
+			//$("#menu").sticky({ topSpacing: 0 });
+		});
+		</script>
+		<title>Recipes</title>
+		<h1>Recipes</h1>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<style>
+	#selector {
+		font-family: "Source Sans Pro",sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		color: #006633;
+		text-align: center;
+	}	
+	.picturesize {
+		height:75px;
+		width: 500px;
+	}
+	.thumbnail {
+		margin-top: 0.5cm;
+		border: 5px solid;
+		border-color: black;
+	}
 
-
+	</style>
+		
 
 </head>
 <body>
 	<div class="navbar menubar" id="menu">
-    <div class="container">
-    <div class="navbar-header"> 
-    	<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
-			<span class="glyphicon glyphicon-align-justify"></span>
-		 </button>
-    <a class="navbar-brand logo" href="#">Food Glorious Food</a> 
-    </div>
-    <div>
-    	<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
-        <ul class="nav navbar-nav navbar-right navstyle">
-        <li><a href="index.html" class="page-scroll active">Home</a></li>
-        <li><a href="#recipes" class="page-scroll">Recipes</a></li>
-        <li><a href="gallery.html" class="page-scroll">Gallery</a></li>
-        <li><a href="#Contact" class="page-scroll">Contact us</a></li>
-      </ul>
-      </nav>
-      </div>
-  </div>
-  </div>
-
-  <style>
-  #selector {
-  font-family: "Source Sans Pro",sans-serif;
-	 font-size: 20px;
-	 font-weight: 400;
-	 color: #006633;
-	 text-align: center;
-}	
-.picturesize {
-	height:75px;
-	width: 500px;
-}
-.thumbnail {
-	margin-top: 0.5cm;
-	border: 5px solid;
-	border-color: black;
-}
-
-  </style>
+		<div class="container">
+			<div class="navbar-header"> 
+				<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+					<span class="glyphicon glyphicon-align-justify"></span>
+				</button>
+				<a class="navbar-brand logo" href="#">Food Glorious Food</a> 
+			</div>
+			<div>
+				<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
+					<ul class="nav navbar-nav navbar-right navstyle">
+						<li><a href="index.html" class="page-scroll active">Home</a></li>
+						<li><a href="#recipes" class="page-scroll">Recipes</a></li>
+						<li><a href="gallery.html" class="page-scroll">Gallery</a></li>
+						<li><a href="#Contact" class="page-scroll">Contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
 
 	<div class="container">
-	<div id="selector">
-		<a href="#" id="menu-item-spagbol" class="thumbnail">Spag bol<img src="../Images/spagbol.jpg" class="picturesize" /></a> </br>
-		<a href="#" id="menu-item-chilli" class="thumbnail">Chilli<img src="../Images/chilli.jpg" class="picturesize" /></a> </br>
-		<a href="#" id="menu-item-pastabake" class="thumbnail">Pastabake<img src="../Images/pastabake.jpg" class="picturesize" /></a> </br>
-		<a href="#" id="menu-item-chickenburger" class="thumbnail">Chicken Burger<img src="../Images/chickenburger.jpg" class="picturesize"/></a>
+		<div id="selector">
+			<a href="#" id="menu-item-spagbol" class="thumbnail">Spag bol<img src="../Images/spagbol.jpg" class="picturesize" /></a> </br>
+			<a href="#" id="menu-item-chilli" class="thumbnail">Chilli<img src="../Images/chilli.jpg" class="picturesize" /></a> </br>
+			<a href="#" id="menu-item-pastabake" class="thumbnail">Pastabake<img src="../Images/pastabake.jpg" class="picturesize" /></a> </br>
+			<a href="#" id="menu-item-chickenburger" class="thumbnail">Chicken Burger<img src="../Images/chickenburger.jpg" class="picturesize"/></a>
+		</div>
+		<div id="item-spagbol" style="display: none;">
+			<span id="back-spagbol" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<h2> Spaghetti Bolognese</h2>
+			<img src="../Images/spagbol.jpg" />
+			<h4>Ingredients</h4>
+			<ul>
+				<li>Spaghetti</li>
+				<li>something else</li>
+			</ul>
+			<h3>Method</h3>
+			<p>Cook it</p>
+		</div>
+		<div id="item-chilli" style="display: none;">
+			<span id="back-chilli" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<h2> Chilli</h2>
+			<img src="../Images/chilli.jpg" />
+			<h4>Ingredients</h4>
+			<ul>
+				<li>Stuff</li>
+				<li>something else</li>
+			</ul>
+			<h3>Method</h3>
+			<p>Cook it</p>
+		</div>
+
+		<div id="item-pastabake" style="display: none;">
+			<span id="back-pastabake" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<h2> Pasta Bake</h2>
+			<img src="../Images/pastabake.jpg" />
+			<h4>Ingredients</h4>
+			<ul>
+				<li>Stuff</li>
+				<li>something else</li>
+			</ul>
+			<h3>Method</h3>
+			<p>Cook it</p>
+		</div>
+
+		<div id="item-chickenburger" style="display: none;">
+			<span id="back-chickenburger" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<h2> Chicken Burger</h2>
+			<img src="../Images/chickenburger.jpg" />
+			<h4>Ingredients</h4>
+			<ul>
+				<li>Stuff</li>
+				<li>something else</li>
+			</ul>
+			<h3>Method</h3>
+			<p>Cook it</p>
+		</div>
+
 	</div>
-	<div id="item-spagbol" style="display: none;">
-		<span id="back-spagbol" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	<h2> Spaghetti Bolognese</h1>
-	<img src="../Images/spagbol.jpg" />
-	<h4>Ingredients</h4>
-<ul>
-	<li>Spaghetti</li>
-	<li>something else</li>
-</ul>
-<h3>Method</h3>
-	<p>Cook it</p>
-</div>
-<div id="item-chilli" style="display: none;">
-		<span id="back-chilli" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	<h2> Chilli</h1>
-	<img src="../Images/chilli.jpg" />
-	<h4>Ingredients</h4>
-<ul>
-	<li>Stuff</li>
-	<li>something else</li>
-</ul>
-<h3>Method</h3>
-	<p>Cook it</p>
-</div>
 
-<div id="item-pastabake" style="display: none;">
-		<span id="back-pastabake" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	<h2> Pasta Bake</h1>
-	<img src="../Images/pastabake.jpg" />
-	<h4>Ingredients</h4>
-<ul>
-	<li>Stuff</li>
-	<li>something else</li>
-</ul>
-<h3>Method</h3>
-	<p>Cook it</p>
-</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		var array = ["spagbol","chilli","pastabake","chickenburger"];
+		for(i=0;i<array.length;i++){
+			var element = array[i];
+			$("#menu-item-"+element).data("item",element);
+			$("#menu-item-"+element).click(function() {
+				$("#selector").hide();
+				$("#item-"+$(this).data("item")).show();
+	  // $(selector).toggle();
+			});
+			$("#back-"+element).data("item",element);
+			$( "#back-"+element ).click(function() {
+				$("#selector").show();
+				$("#item-"+$(this).data("item")).hide();
+	  // $(selector).toggle();
+			});
+		}
+	/* or
+	for(var x in array){
+		
+	} */
 
-<div id="item-chickenburger" style="display: none;">
-		<span id="back-chickenburger" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	<h2> Chicken Burger</h1>
-	<img src="../Images/chickenburger.jpg" />
-	<h4>Ingredients</h4>
-<ul>
-	<li>Stuff</li>
-	<li>something else</li>
-</ul>
-<h3>Method</h3>
-	<p>Cook it</p>
-</div>
-
-
-
-<script type="text/javascript">
-var array = ["spagbol","chilli","pastabake","chickenburger"];
-for(i=0;i<array.length;i++){
-	var element = array[i];
-	$( "#menu-item-"+element ).click(function() {
-		$("#selector").hide();
-		$("#item-"+element).show();
-  // $(selector).toggle();
 });
-
-	$( "#back-"+element ).click(function() {
-		$("#selector").show();
-		$("#item-"+element).hide();
-  // $(selector).toggle();
-});
-}
-/* or
-for(var x in array){
-	
-} */
-
-
-</script>
-
+	</script>
 </body>
 </html>
